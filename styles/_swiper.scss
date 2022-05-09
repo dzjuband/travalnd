@@ -1,0 +1,28 @@
+.swiper {
+    margin-bottom: 52px;
+
+    &-slide {
+        width: 262px;
+    }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto;
+    padding: 0 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    width: 75px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: rgba(201, 69, 59, 0.1);
+    opacity: 1;
+    transition: .3s;
+    
+    &-active {
+        background-color: #C9453B;
+    }
+}

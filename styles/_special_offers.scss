@@ -1,0 +1,94 @@
+.special-offers {
+    padding: 75px 0 70px;
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__prev, &__next {
+        max-width: 20px;
+        max-height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__image {
+        margin-bottom: 20px;
+        line-height: 0;
+
+        &-pic:hover {
+            transform: scale(1.1);
+        }
+
+        &-link {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: block;
+            padding-bottom: 66%;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+
+    &__main-card-title {
+        font-style: normal;
+        font-weight: 500;
+        font-family: 'Gelasio', Arial, Helvetica, sans-serif; 
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+
+        &:hover {
+            color: #C9453B;
+        }
+    }
+
+    &__town-rate-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    &__town-rate-col-img-point {
+        margin-right: 10px;
+        display: inline-block;
+        height: 15.2px;
+        object-fit: cover;
+    }
+
+    &__town-rate-col-img-star {
+        margin-right: 10px;
+        display: inline-block;
+        height: 24px;
+        object-fit: cover;
+    }
+
+    &__time {
+        padding-bottom: 8px;
+
+        &-decr {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+    }
+
+    &__price-count {
+        display: inline;
+        line-height: 1.5;
+        color: #000;
+        letter-spacing: 0;
+    }
+
+    &__town-rate-col:nth-child(1) {
+        margin-right: 50px;
+    }
+
+    &__town-rate-box, &__town-rate-city-box {
+        display: flex;
+        align-items: center;
+    }
+}

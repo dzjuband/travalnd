@@ -1,0 +1,145 @@
+.from-blog-news {
+    padding: 70px 0;
+
+    &__img-self {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    &__about-park-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    &__img-park {
+        margin-bottom: 35px;
+        padding-bottom: 71%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__park-text {
+        margin-bottom: 10px;
+    }
+
+    &__text-link {
+        display: block;
+        transition: 0.5s;
+    }
+
+    &__img-block {
+        position: relative;
+        padding-bottom: 79%;
+        overflow: hidden;
+    }
+
+    &__img-park, &__img-block {
+        display: block;
+        border-radius: 10px;
+    }
+
+    &__about-park-img:hover, &__img-self:hover, &__text-link:hover, &__small-href:hover {
+        transform: scale(1.1);
+    }
+
+    &__park-header:hover, &__small-title:hover, &__text-link:hover, &__small-href:hover {
+        color:#fbbf4e;
+        transition: 0.5s;
+    }
+
+    &__small-href {
+        font-size: 20px;
+        line-height: 1.5;
+        color: rgb(0,0,0,0.8);
+        font-weight: 500;
+        transition: 0.5s;
+        display: block;
+
+        &-bk {
+            color:black;
+        }
+    }
+
+    &__small-text {
+        margin-bottom: 10px;
+    }
+
+    &__small-title {
+        font-family: 'Gelasio', Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        color: rgb(0,0,0);
+        font-weight: 500;
+    }
+
+    &__small-col {
+        display: inline-block;
+        width: 50%;   
+        letter-spacing: normal;
+        padding: 15px;
+        vertical-align: middle;
+    }
+
+    &__child-row {
+        margin: -15px;
+        letter-spacing: -0.36em;
+    }
+
+    &__col {
+        vertical-align: top;
+        display: inline-block;
+        width: 50%;   
+        letter-spacing: normal;
+        padding: 15px;
+    }
+    
+    &__row {
+        margin: -15px;
+        letter-spacing: -0.36em;
+    }
+
+    &__park-header {
+        font-family:  'Gelasio', Arial, Helvetica, sans-serif;
+        color: rgb(0,0,0);
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    &__info {
+        line-height: 1.60;
+        max-width: 581px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 43px;
+        font-family: 'Gelasio', Arial, Helvetica, sans-serif;
+        color: rgb(0,0,0);
+        margin-bottom: 20px;
+        line-height: 1.40;
+        font-weight: 500;
+     }
+
+     &__head {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+}
+
+
+
