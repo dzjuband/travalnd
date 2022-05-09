@@ -1,0 +1,25 @@
+.btn {
+    display: inline-block;
+    background-color: #C9453B;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 13px 34px 12px;
+    border: 1px solid #C9453B;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-color: rgba(0, 0, 0, 0.6);   
+    }
+
+    &--sm {
+        padding: 9px 31px;
+    }
+
+    &--lg {
+        padding: 17px 45px 16px;
+    }
+
+}

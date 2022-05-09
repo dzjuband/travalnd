@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+         url('./fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.woff2') format('woff2'),
+         url('./fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gelasio';
+    src: url('./fonts/Gelasio-Medium.woff2') format('woff2'),
+         url('./fonts/Gelasio-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gelasio';
+    src: url('./fonts/Gelasio-Regular.woff2') format('woff2'),
+         url('./fonts/Gelasio-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gelasio';
+    src: url('./fonts/Gelasio-Bold.woff') format('woff2'),
+         url('./fonts/Gelasio-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-width: 320px;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+

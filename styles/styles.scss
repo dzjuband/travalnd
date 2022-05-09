@@ -1,114 +1,6 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
-         url('./fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Medium.woff2') format('woff2'),
-         url('./fonts/Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gelasio';
-    src: url('./fonts/Gelasio-Medium.woff2') format('woff2'),
-         url('./fonts/Gelasio-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gelasio';
-    src: url('./fonts/Gelasio-Regular.woff2') format('woff2'),
-         url('./fonts/Gelasio-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gelasio';
-    src: url('./fonts/Gelasio-Bold.woff') format('woff2'),
-         url('./fonts/Gelasio-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    min-width: 320px;
-}
-
-.wrapper {
-    overflow: hidden;
-}
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding:0 15px;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol {
-    margin: 0;
-}
-
-ul, ol {
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color:black;
-}
-
-input {
-    font-style: normal;
-    font-weight: normal;
-    line-height: 150%;
-    letter-spacing: 0.06em;
-    font-size: 16px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    height: 44px; 
-    border-radius: 5px;
-    padding: 0 10px;
-    display: block;
-    width: 100%;
-    outline: none;
-    transition: all .3s;
-    color: #000000;
-
-    &:focus { 
-        border-color: #C9453B;
-    }
-
-    &::placeholder {
-        color: #000;
-        opacity: 1;
-    }
-}
+@import './base';
+@import './input';
+@import './btn';
 
 .swiper {
     margin-bottom: 52px;
@@ -311,33 +203,6 @@ input {
         max-width: 458px;
     }
 }
-
-.btn {
-    display: inline-block;
-    background-color: #C9453B;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 13px 34px 12px;
-    border: 1px solid #C9453B;
-    text-align: center;
-
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.6);
-        border-color: rgba(0, 0, 0, 0.6);   
-    }
-
-    &--sm {
-        padding: 9px 31px;
-    }
-
-    &--lg {
-        padding: 17px 45px 16px;
-    }
-
-}
-
 .popular-location {
     padding: 70px 0;
 
@@ -423,9 +288,7 @@ input {
 }
 
 
-
-/////////////////
-.from-blog-news{
+.from-blog-news {
     padding: 70px 0;
 
     &__head {
@@ -539,18 +402,24 @@ input {
         display: block;
         transition: 0.5s;
     }
+
+    &__img-park, &__img-block {
+        display: block;
+        border-radius: 10px;
+    }
+
+    &__about-park-img:hover, &__img-self:hover, &__text-link:hover, &__small-href:hover {
+        transform: scale(1.1);
+    }
     
 }
 
-
-.child_item__img, .from-blog-news__img-park, .from-blog-news__img-block {
+.child_item__img {
     display: block;
     border-radius: 10px;
 }
 
-.from-blog-news__about-park-img:hover, .from-blog-news__img-self:hover, .from-blog-news__text-link:hover, .from-blog-news__small-href:hover {
-    transform: scale(1.1);
-}
+
 
 .box-head { 
     text-align: center; 
@@ -682,10 +551,10 @@ input {
     background-color: rgba(201, 69, 59, 0.1);
     opacity: 1;
     transition: .3s;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #C9453B;
+    
+    &-active {
+        background-color: #C9453B;
+    }
 }
 
 @media (max-width: 320px){
