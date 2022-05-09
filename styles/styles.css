@@ -90,9 +90,11 @@ input {
   transition: all 0.3s;
   color: #000000;
 }
+
 input:focus {
   border-color: #C9453B;
 }
+
 input::placeholder {
   color: #000;
   opacity: 1;
