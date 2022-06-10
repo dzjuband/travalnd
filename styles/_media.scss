@@ -35,6 +35,7 @@
 }
 
 @media (max-width: 768px) {
+
     .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
         margin: 5px;
     }
@@ -89,7 +90,7 @@
     }
 
     .hero__caption {
-        font-size: 50px;
+        font-size: 40px;
         max-width: 620px;
     }
 
